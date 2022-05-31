@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to MU Graphics Community </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+</head>
+<style>
+    body{
+        background-color: black;
+        padding: 0rem;
+
+    }
+    #logo{
+        display: column flex;
+        margin: 0;
+        padding: 0;
+    }
+    #Logo {
+        display: flex;
+align-items: flex-end;
+padding: 2rem 0rem;
+
+    }
+    #Logo img{
+height: 10rem;
+width: 10rem;
+
+    }
+   
+    #Logo h1{
+        color: #a763f6;
+        font-size: 4rem;
+        border: #a763f6;
+        border-style: solid;
+        padding: 2rem 2rem;
+        display: flex;
+        margin: 2rem 14rem;
+        border-radius: 2rem;
+        align-items: flex-end;
+        justify-content: center;
+        background-color: rgb(42, 21, 87);
+    }
+    #navbar ul{
+        display: flex;
+       align-items: center;
+       
+        
+    }
+    #navbar li a{
+        
+      
+        text-decoration: none;
+         color: white; 
+         font-family: 'Yanone Kaffeesatz', sans-serif;
+    }
+    #navbar li img{
+        height: 3rem;
+        width: 10rem;
+    }
+    
+    #navbar {
+height: 3.3rem;
+position: relative;   
+padding: 0rem 0rem ; 
+margin: 0rem ;  
+    }
+    #navbar::before{
+        content: "";
+        background-color: #3a2d80;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+        opacity: 1;
+        padding: 0rem 0rem;
+        margin: 0rem;
+    }
+    #navbar ul li{
+        font-size: 2rem;
+        list-style: none;
+        padding: 0rem 1rem;
+        
+      
+       
+        
+    }
+    #navbar li a:hover{
+        border-radius: 10px;
+        background-color: #6957e7;
+        border: 2px; 
+    }
+    #content ul{
+        display: flex;
+        
+    }
+    #content ul li{
+        margin: 3rem 3rem;
+        border: #3a2d80;
+        border-style: solid;
+        border-width: 1rem;
+       
+    }
+    #co2 img{
+        margin: 1rem 4rem;
+       
+        height: 15rem;
+    }
+    #co3 img{
+margin: 1rem 4rem;
+img align-self: centre;
+        height: 15rem;
+    }
+    #co4 img{
+        margin: 1rem 4.2rem;
+        height: 15rem;
+    }
+    #co1 img{
+margin: 1rem 4.4rem;
+        height: 15rem;
+    }
+    #co2 img:hover{
+        height: 25rem;
+        cursor:grab;
+    }
+    #co3 img:hover{
+        height: 25rem;
+        cursor:grab;
+    }
+    #co4 img:hover{
+        height: 25rem;
+        cursor:grab;
+    }
+    #co1 img:hover{
+        height: 25rem;
+        cursor:grab;
+    }
+    #intro1{
+        color: #a763f6;
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+        font-size: 3rem;
+        text-align: center;
+
+    }
+ #intro2{
+        color: #a763f6;
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+        font-size: 3rem;
+        text-align: center;
+        
+    } #intro3{
+        color: #a763f6;
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+        font-size: 3rem;
+        text-align: center;
+        
+    } #intro4{
+        color: #a763f6;
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+        font-size: 3rem;
+        text-align: center;
+
+        
+    }
+    #link1{
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+        width: 23.5rem;
+        height: 2rem;
+        text-align: center;
+        margin: 3rem 0rem;
+        background-color: #a763f6;
+       
+    }
+    #link1 a{
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: white;
+        text-align: center;
+        
+        justify-content: center;
+        padding: 2rem;
+    }
+    #link2{
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+        width: 23.5rem;
+        height: 2rem;
+        
+        background-color: #a763f6;
+       
+    }
+    #link2 a{
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: white;
+        text-align: center;
+    }
+    #link3{
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+        width: 23.5rem;
+        height: 2rem;
+        
+        background-color: #a763f6;
+       
+    }
+    #link3 a{
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: white;
+        text-align: center;
+    }
+    #link4{
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+        width: 23.5rem;
+        height: 2rem;
+        
+        background-color: #a763f6;
+       
+    }
+    #link4 a{
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: white;
+        text-align: center;
+    }
+    #link1 :hover{
+        color: blue;
+        text-decoration:underline
+    }
+    #link2 :hover{
+        color: blue;
+        text-decoration:underline
+    }
+    #link3 :hover{
+        color: blue;
+        text-decoration:underline
+    }
+    #link4 :hover{
+        color: blue;
+        text-decoration:underline
+    }
+    #form{
+        display: flex;
+        flex-direction: column;
+        border: #a763f6;
+        border-style: solid;
+        margin: auto;
+        width: 30rem;
+        justify-content: center;
+        
+    }
+    #form h1{
+        color: #6957e7;
+        text-align: center;
+        font-size: 5rem;
+    }
+    #form input{
+        height: 3rem;
+        font-size: 3rem;
+    }
+#btn{
+    height: 3rem;
+    font-size: 3rem;
+    
+
+}
+#btn:hover{
+    cursor: pointer;
+    background-color: gray;
+}
+</style>
+<body>
+    <nav id="navbar">
+        <ul>
+            <li class="nav"><img src="medi.png" alt="Medi-caps University">
+            </li>
+            <li class="nav"> <a href="#">Home</a></li>
+            <li class="nav"> <a href="#">Services</a></li>
+            <li class="nav"> <a href="#">About us</a></li>
+            <li class="nav"> <a href="#">Contact us</a></li>
+            
+        </ul>
+    </nav>
+ <div id="logo">  
+<div id="Logo2">
+    
+</div>
+<div id="Logo">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAenHKz86Rg2QsoNK1_IiLd43sGeg2Qi41yA&usqp=CAU" alt="MU Graphics Club">
+    <h1>Welcome to the Graphics Club of Medi-caps</h1>
+
+</div>
+</div>
+<div id="content">
+    <ul>
+        <li id="co1"><img src="Aayan.jpeg" alt="Error">
+            <h1 id="intro1">Aayan Ali (President) </h1>
+        <p ><button id="link1""><a href="https://www.linkedin.com/in/aayan-ali-332635232"> Linkedin</a></button></p>
+        </li>
+        <li id="co3"><img src="mohit.jpeg" alt="Error">
+            <h1 id="intro3">Mohit Namdev (Vicepresident)</h1>
+            <p ><button id="link3""><a href="https://www.linkedin.com/mwlite/in/mohit-namdev-5a875221b"> Linkedin</a></button></p>
+        </li>
+         <li id="co2"><img src="nihar.jpeg" alt="Error">
+            <h1 id="intro2">Nihar Agrawal (Content head)</h1>
+            <p ><button id="link2""><a href=""> Linkedin</a></button></p>
+        </li>
+         
+         <li id="co4"><img src="suck.jpeg" alt="Error">
+            <h1 id="intro4">Saksham Gupta (Secretary)</h1>
+            <p ><button id="link4""><a href="https://www.linkedin.com/in/saksham-gupta-24076422b"> Linkedin</a></button></p>
+        </li>
+        
+        
+
+    </ul>
+</div>
+<div id="form">
+    <h1>To register</h1>
+    <input type="number" name="Contact details" placeholder="Enter your no.">
+    <button id="btn"> <a href="https://docs.google.com/forms/d/e/1FAIpQLSfHjXD4O_hKPGRfSImwL4uwG_1eBk5qEc9Xj9m2ea-wcIUtjA/viewform?usp=sf_link">Submit</a> </button>
+</div>
+</body>
+</html>
+
